@@ -1,0 +1,109 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica';
+}
+ul, ol {
+  list-style: none;
+}
+
+.title {
+  text-align: center;
+  padding: 15px 0;
+}
+.container {
+  width: 800px;
+  height: 640px;
+  padding: 30px;
+  padding-top: 25px;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 1px solid #bbb;
+}
+.list_item {
+  margin-right: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.item_button {
+  width: 72px;
+  height: 30px;
+  color: white;
+  font-weight: lighter;
+  background-color: #9f9da0;
+  margin: 0 10px 15px 0;
+  border: none;
+  border-radius: 3.5px;
+}
+.item_button.active {
+  background-color: #524e53;
+  font-weight: 400;
+}
+.item_button:focus {
+  outline: none;
+}
+.graph_area {
+  background-color: white;
+  width: 740px;
+  height: 440px;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.notice {
+  width: 740px;
+  height: 440px;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+.notice.active {
+  display: table-cell;;
+}
+.notice p {
+  color: #999;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.question {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+.graph_canvas {
+  display: none;
+}
+.graph_canvas.active {
+  display: block;
+}
+
+.tooltip {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #333;
+  opacity: 0.7;
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.tooltip::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -8px;
+  top: 6px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid none;
+  border-right: 8px solid #333;
+  /*opacity: 0.7;*/
+}
